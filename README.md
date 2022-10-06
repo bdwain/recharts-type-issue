@@ -17,3 +17,5 @@ Found 1 error in node_modules/recharts/types/component/LabelList.d.ts:21
 ```
 
 it occurs when strict (in tsconfig) is true and using a newer version of typescript
+
+it is not causing issues when building recharts itself because its own tsconfig does not set strict to true, but a strict project should be able to use recharts without setting skipLibCheck to true, which skips checks for ALL libraries
